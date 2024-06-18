@@ -12,5 +12,11 @@
 
   "browser_action": {
     "default_popup": "lemon.html"
+  },
+
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "tablemon@yabobay.codeberg.org"
+    }
   }
 }
