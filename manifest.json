@@ -1,22 +1,32 @@
 {
   "manifest_version": 2,
-  "name": "Tab Lemon",
-  "version": "0.0",
+  "name": "Tab Melon",
+  "version": "1.0",
 
   "description": "Tells you how many tabs are open!",
 
   "icons": {
-    "48": "icons/lemon48.png",
-    "96": "icons/lemon96.png"
+    "48": "icons/melon48.png",
+    "96": "icons/melon96.png"
   },
 
+  "permissions": ["tabs", "storage"],
+
   "browser_action": {
-    "default_popup": "lemon.html"
+    "default_popup": "melon.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
   },
 
   "browser_specific_settings": {
     "gecko": {
-      "id": "tablemon@yabobay.codeberg.org"
+      "id": "tabmelon@yabobay.github.com",
+      "data_collection_permissions": {
+        "required": ["none"]
+      }
     }
   }
 }
