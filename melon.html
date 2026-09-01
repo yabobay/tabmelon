@@ -1,7 +1,7 @@
 <!doctype html>
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <style>
     body {
       background-color: #def199;
@@ -12,24 +12,33 @@
     }
     .header {
       text-shadow: 0 2px 0 white;
+      display: flex;
+      padding-bottom: 10px;
+    }
+    #title {
+      position: absolute;
+      left: 20px;
     }
     #total {
       font-family: monospace;
       text-align: center;
       font-size: 1.5em;
+      width: 100%;
+    }
+    #melon {
+      position: absolute;
+      right: 20px;
     }
   </style>
 </head>
 
 <body>
   <div class="header">
-    <b>tab melon!</b>
-    <span style="float:right;">
-      🍈
-    </span>
+    <b id="title">tab melon!</b>
+    <span id="total">?</span>
+    <span id="melon">🍈</span>
   </div>
-  <div id="total">?</div>
-  <div style="width: 500px;"><canvas id="graph"></canvas></div>
+  <div style="width: 500px"><canvas id="graph"></canvas></div>
 </body>
 
 <script src="bundle.js"></script>
